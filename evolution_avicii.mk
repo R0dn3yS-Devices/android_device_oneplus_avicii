@@ -22,14 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/avicii/device.mk)
 
 # Inherit some common Pixys stuff.
-$(call inherit-product, vendor/evo/main.mk)
+$(call inherit-product, vendor/evolution/main.mk)
 
-PRODUCT_NAME := evo_avicii
+PRODUCT_NAME := evolution_avicii
 PRODUCT_DEVICE := avicii
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := AC2001
 CUSTOM_DEVICE := Nord
+
+# Some Evolution stuff
+WITH_GAPPS := false
+EVO_DONATE_URL := https://paypal.me/dfagaming
+EVO_MAINTAINER := R0dn3yS
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
