@@ -6,15 +6,15 @@
     "branch": "lineage-18.1"
   },
   {
-    "repository": "PixysOS-Devices/kernel_oneplus_sm7250",
+    "repository": "R0dn3yS-Devices/kernel_oneplus_sm7250",
     "target_path": "kernel/oneplus/sm7250",
-    "branch": "eleven",
+    "branch": "elle",
     "remote": "github"
   },
   {
-    "repository": "PixysOS-Devices/vendor_oneplus_avicii",
+    "repository": "R0dn3yS-Devices/vendor_oneplus_avicii",
     "target_path": "vendor/oneplus/avicii",
-    "branch": "eleven",
+    "branch": "elle",
     "remote": "github"
   },
   {

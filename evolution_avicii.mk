@@ -21,20 +21,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from avicii device
 $(call inherit-product, device/oneplus/avicii/device.mk)
 
-# Inherit some common Evolution stuff.
+# Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Official
+EVO_BUILD_TYPE := OFFICIAL
+
+# Evo Maintainer Info
+EVO_DONATE_URL := https://paypal.me/dfagaming
+EVO_MAINTAINER := R0dn3yS
+
+# FOD Animation
+EXTRA_FOD_ANIMATIONS := true
+
+# Device identifier. This must come after all inclusions.
 PRODUCT_NAME := evolution_avicii
 PRODUCT_DEVICE := avicii
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := AC2001
 CUSTOM_DEVICE := Nord
-
-# Some Evolution stuff
-WITH_GAPPS := false
-EVO_DONATE_URL := https://paypal.me/dfagaming
-EVO_MAINTAINER := R0dn3yS
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
